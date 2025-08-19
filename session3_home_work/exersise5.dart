@@ -15,6 +15,6 @@ void main() {
   print(a <= b);
 
   int sum = a + b;
-  bool is20 = (sum == 20);
-  print(is20);
+  bool sumIs20 = (sum == 20);
+  print(sumIs20);
 }
