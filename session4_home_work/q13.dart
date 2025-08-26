@@ -7,12 +7,14 @@ void main() {
 
   if (mark > 85) {
     grade = 'A';
-  } else if (mark > 70) {
+  } else if (mark > 75) {
     grade = 'B';
-  } else if (mark > 50) {
+  } else if (mark > 65) {
     grade = 'C';
-  } else {
+  } else if (mark > 50) {
     grade = 'D';
+  } else {
+    grade = 'F';
   }
 
   switch (grade) {

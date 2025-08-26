@@ -3,16 +3,16 @@
  greater than or equal to 40. */
 
 void main() {
-  List<int>? scores = [60 , 80 , 70];
+  List<int>? scores = null;
 
-  if (scores.isEmpty) {
+  if ((scores?.isEmpty ?? true) || scores == null) {
     print('No scores');
   } else {
     print(scores.first + scores.last);
     if ((scores.first + scores.last) >= 40) {
-      print('The addition is >= 40');
+      print('Pass');
     } else {
-      print('The addition is no >= 40');
+      print('Fail');
     }
   }
 }

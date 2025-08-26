@@ -2,17 +2,12 @@
  print a default message. Then update the phone number and print its length. */
 
 void main() {
-  Map<int, String?> phoneNumber = {1: '01211620479', 2: null};
+  Map<String, dynamic> data = {'phoneNumber': null};
 
-  String? phone = phoneNumber[2];
-  if (phone == null) {
-    print('Not available');
-  } else {
-    print(phone);
+  String? phoneNumber = data['phoneNumber'];
+  if (phoneNumber == null) {
+    print('phone number is null');
+    data['phoneNumber'] = '01287184655';
+    print(data['phoneNumber'].toString().length);
   }
-
-  phoneNumber[2] = '01287184655';
-  String updatePhone = phoneNumber[2]!;
-  print(updatePhone);
-  print(updatePhone.length);
 }

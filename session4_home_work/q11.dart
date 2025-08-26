@@ -4,21 +4,20 @@
 
 void main() {
   double price = 100;
+  double? finalPrice;
   bool isStudent = true;
   bool hasCoupon = false;
   double? discount;
 
   if (isStudent) {
+    discount = 0.5;
+    finalPrice = price * (1 - discount);
+    print(finalPrice);
+  } else if (hasCoupon) {
     discount = 0.2;
-    price = price * (1 - discount);
-    if (hasCoupon) {
-      discount = 0.4;
-      price = price * (1 - discount);
-    }
-    if (price > 2000) {
-      discount = 0.1;
-      price = price * (1 - discount);
-    }
+    finalPrice = price * (1 - discount);
+    print(finalPrice);
+  } else {
+    print(finalPrice);
   }
-  print(price);
 }

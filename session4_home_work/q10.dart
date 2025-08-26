@@ -12,9 +12,7 @@ void main() {
 
   print(codes.length);
 
-  if (codes.containsKey('JO')) {
-    print('Jordan exists in the map');
-  } else {
+  if (!codes.containsKey('JO')) {
     print('Jordan missing');
   }
 }
