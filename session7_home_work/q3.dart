@@ -8,10 +8,10 @@ void main() {
   String word = stdin.readLineSync()!;
 
   String reversed =
-      word.split('').reversed.join().toLowerCase(); // ممكن أشيل ال lower
+      word.split('').reversed.join(); 
 
   int vowelCount = 0;
-  String vowels = "aeiou";                          // وأزود هنا الحروف الcapital
+  String vowels = "aeiouAEIOU";                          
 
   for (int i = 0; i < word.length; i++) {
     if (vowels.contains(word[i])) {
