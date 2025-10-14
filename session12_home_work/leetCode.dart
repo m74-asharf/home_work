@@ -20,7 +20,7 @@ class Solution {
   }
 }
 void main() {
-  ListNode node5 = ListNode(5);
+  ListNode node5 = ListNode(5, null);
   ListNode node4 = ListNode(4, node5);
   ListNode node3 = ListNode(3, node4);
   ListNode node2 = ListNode(2, node3);
