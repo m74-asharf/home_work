@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+// import 'package:project2/widgets/quick_stats.dart';
+// import 'package:project2/widgets/welcome_section.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,6 +24,19 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // body: Padding(
+      //   padding: EdgeInsets.symmetric(horizontal: 16),
+      //   child: SafeArea(
+      //     child: Column(
+      //       crossAxisAlignment: CrossAxisAlignment.start,
+      //       spacing:24 ,
+      //       children: [SizedBox(
+      //         height: 16), 
+      //         WelcomeSection(),
+      //         QuickStats()]),
+      //   ),
+      // ),
+
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(20),
@@ -87,7 +102,7 @@ class HomeScreen extends StatelessWidget {
               ),
 
               SizedBox(height: 15),
-              
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -107,7 +122,7 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                     child: Column(
-                      children: const [
+                      children: [
                         Icon(Icons.group, color: Colors.deepPurple, size: 28),
                         SizedBox(height: 8),
                         Text(
@@ -126,7 +141,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Container(
                     width: 100,
-                    padding: const EdgeInsets.symmetric(vertical: 15),
+                    padding: EdgeInsets.symmetric(vertical: 15),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(15),
@@ -258,7 +273,6 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
 
-              // Secure
               Container(
                 margin: EdgeInsets.only(bottom: 12),
                 padding: EdgeInsets.all(15),
@@ -313,7 +327,6 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
 
-              // Beautiful UI
               Container(
                 margin: const EdgeInsets.only(bottom: 12),
                 padding: const EdgeInsets.all(15),
