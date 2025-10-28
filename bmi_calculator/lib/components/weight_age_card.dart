@@ -33,6 +33,7 @@ class WeightAgeCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 FloatingActionButton(
+                  shape: CircleBorder(),
                   heroTag: '$label-',
                   mini: true,
                   onPressed: onDecrement,
@@ -41,6 +42,7 @@ class WeightAgeCard extends StatelessWidget {
                 ),
                 SizedBox(width: 10),
                 FloatingActionButton(
+                  shape: CircleBorder(),
                   heroTag: '$label+',
                   mini: true,
                   onPressed: onIncrement,

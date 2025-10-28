@@ -29,8 +29,8 @@ class GenderCard extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(icon, size: 80, color: Colors.white),
-              SizedBox(height: 15),
+              Icon(icon, size: 90, color: Colors.white),
+              SizedBox(height: 10),
               Text(label, style: KLabelTextStyle),
             ],
           ),

@@ -23,13 +23,13 @@ class _BMIScreenState extends State<BMIScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('BMI CALCULATOR',
-        style: TextStyle(color: Colors.white),),
+        title: Text('BMI CALCULATOR', style: TextStyle(color: Colors.white)),
         backgroundColor: Color(0xff0a0e21),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          SizedBox(height: 16),
           Row(
             children: [
               GenderCard(
@@ -72,8 +72,7 @@ class _BMIScreenState extends State<BMIScreen> {
               double bmi = weight / ((height / 100) * (height / 100));
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ResultSreen(bmi: bmi),
-                ),
+                MaterialPageRoute(builder: (context) => ResultSreen(bmi: bmi)),
               );
             },
           ),
