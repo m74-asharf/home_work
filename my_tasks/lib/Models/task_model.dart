@@ -1,11 +1,11 @@
 class TaskModel {
   final String title;
-  final DateTime createdAt;
-  bool isDone;
+  final DateTime date;
+  bool isComplete;
 
   TaskModel({
     required this.title,
-    required this.createdAt,
-    this.isDone = false,
+    required this.date,
+    this.isComplete = false,
   });
 }
